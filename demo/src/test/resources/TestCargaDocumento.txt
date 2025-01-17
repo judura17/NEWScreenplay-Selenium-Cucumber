@@ -1,0 +1,20 @@
+Hola
+Este archivo es de prueba de carga.
+
+Resumen de las principales condiciones de espera explícita:
+// Espera hasta que un elemento sea visible
+    protected WebElement waitForElementToBeVisible(By locator) {
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    // Espera hasta que un elemento sea clickeable
+    protected WebElement waitForElementToBeClickable(By locator) {
+        return wait.until(ExpectedConditions.elementToBeClickable(locator));
+    }
+
+    // Espera hasta que un elemento esté presente en el DOM
+    protected WebElement waitForElementPresence(By locator) {
+        return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+    }
+}
+
